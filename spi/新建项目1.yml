@@ -1,0 +1,26 @@
+project_name: '1234'
+spi_config:
+  vcc: 关闭
+  io: 1.8V
+  speed: 937.5K
+  clk: LOW/1EDG
+  bit: MSB
+  rx_size: 2字节
+data_group:
+  '1':
+    data:
+    - name: '1111'
+      data: 11 11
+  '2':
+    data:
+    - name: '2'
+      data: 22 22
+test_group:
+  新建分组1:
+  - name: '1111'
+    data: 11 11
+  - name: '1111'
+    data: 11 11
+  新建分组2:
+  - name: '1111'
+    data: 11 11
