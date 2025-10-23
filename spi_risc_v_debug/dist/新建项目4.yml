@@ -1,0 +1,101 @@
+project_name: 项目名称
+spi_config:
+  vcc: 5V
+  io: 3.3V
+  speed: 468.75K
+  clk: LOW/1EDG
+  bit: MSB
+  rx_size: 64字节
+data_group:
+  自然饱和度:
+    data:
+    - name: 自然饱和度算法0.5
+      data: 40 04 00 CE
+    - name: 自然饱和度算法0.6
+      data: 40 04 00 D8
+    - name: 自然饱和度算法0.4
+      data: 40 04 00 C4
+  对比度:
+    data:
+    - name: 蓝光算法1
+      data: 40 01 00 01
+    - name: 饱和度算法1
+      data: 40 03 00 00
+    - name: 示意算法1
+      data: 40 06 00 02
+    - name: 自然饱和度算法1
+      data: 40 04 00 00
+    - name: 对比度算法1
+      data: 40 05 00 0F
+    - name: 蓝光算法2
+      data: 40 01 00 02
+    - name: 蓝光算法3
+      data: 40 01 00 03
+test_group:
+  aa:
+  - name: 自然饱和度算法0.5
+    data: 40 04 00 CE
+  - name: 自然饱和度算法0.5
+    data: 40 04 00 CE
+  - name: 自然饱和度算法0.5
+    data: 40 04 00 CE
+  - name: 自然饱和度算法0.6
+    data: 40 04 00 D8
+  - name: 自然饱和度算法0.6
+    data: 40 04 00 D8
+  - name: 自然饱和度算法0.6
+    data: 40 04 00 D8
+  新建分组2:
+  - name: 自然饱和度算法0.4
+    data: 40 04 00 C4
+  新建分组3:
+  - name: 蓝光算法1
+    data: 40 01 00 01
+  - name: 蓝光算法3
+    data: 40 01 00 03
+  - name: 蓝光算法2
+    data: 40 01 00 02
+  - name: 对比度算法1
+    data: 40 05 00 0F
+  新建分组4: []
+function_config:
+- address: '01'
+  function: 蓝光算法
+  record: 是
+  var_name: 蓝光
+  multi_var: 否
+  formula: 蓝光
+  range_val: 无
+  sign: 否
+- address: '03'
+  function: 饱和度算法
+  record: 是
+  var_name: 饱和度
+  multi_var: 否
+  formula: 64*(饱和度 - 1)
+  range_val: '[1,3]'
+  sign: 否
+- address: '04'
+  function: 自然饱和度算法
+  record: 是
+  var_name: 自然饱和度
+  multi_var: 否
+  formula: 100*(自然饱和度 - 1)
+  range_val: '[0,2]'
+  sign: 是
+- address: '05'
+  function: 对比度算法
+  record: 是
+  var_name: 对比度
+  multi_var: 是
+  formula: (垂直分辨率* 水平分辨率) / 通道 / 64 /色深*对比度
+  range_val: '[1,2]'
+  sign: 否
+- address: '06'
+  function: 示意算法
+  record: 是
+  var_name: 示意参数
+  multi_var: 否
+  formula: 示意参数*2
+  range_val: '[0,5]'
+  sign: 否
