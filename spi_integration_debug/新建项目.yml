@@ -1,0 +1,38 @@
+project_name: 项目名称
+spi_config:
+  vcc: 5V
+  io: 3.3V
+  speed: 468.75K
+  clk: LOW/1EDG
+  bit: MSB
+  rx_size: 2字节
+data_group:
+  默认组:
+    data:
+    - name: 饱和度关闭
+      data: 40 0A 00 C0
+test_group:
+  新建分组1:
+  - name: 饱和度关闭
+    data: 40 0A 00 C0
+  - name: 饱和度关闭
+    data: 40 0A 00 C0
+  - name: 饱和度关闭
+    data: 40 0A 00 C0
+function_config:
+- address: 0A
+  function: 饱和度
+  record: 是
+  var_name: 饱和度
+  multi_var: 是
+  formula: 64*(饱和度 - 1)
+  range_val: 无
+  sign: 是
+- address: '01'
+  function: '01'
+  record: 是
+  var_name: '01'
+  multi_var: 否
+  formula: 无
+  range_val: 无
+  sign: 否

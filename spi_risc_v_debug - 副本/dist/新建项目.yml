@@ -1,0 +1,29 @@
+project_name: 项目名称
+spi_config:
+  vcc: ''
+  io: ''
+  speed: ''
+  clk: ''
+  bit: ''
+  rx_size: ''
+data_group:
+  默认组:
+    data: []
+test_group: {}
+function_config:
+- address: '01'
+  function: 对比度算法
+  record: 是
+  var_name: 对比度,通道
+  multi_var: 是
+  formula: 对比度+通道
+  range_val: '[2,4]'
+  sign: 否
+- address: '05'
+  function: 饱和度算法
+  record: 是
+  var_name: 饱和度
+  multi_var: 是
+  formula: 饱和度-1
+  range_val: '[1,2]'
+  sign: 否

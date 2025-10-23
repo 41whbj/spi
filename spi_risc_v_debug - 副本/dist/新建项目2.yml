@@ -1,0 +1,16 @@
+project_name: 项目名称
+spi_config:
+  vcc: 关闭
+  io: 1.8V
+  speed: 468.75K
+  clk: LOW/1EDG
+  bit: MSB
+  rx_size: 2字节
+data_group:
+  默认组:
+    data:
+    - name: '11'
+      data: 01 11
+    - name: '2'
+      data: 02 22
+test_group: {}
