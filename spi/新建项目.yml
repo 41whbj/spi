@@ -1,0 +1,50 @@
+project_name: '12345'
+spi_config:
+  vcc: 关闭
+  io: 1.8V
+  speed: 937.5K
+  clk: LOW/1EDG
+  bit: MSB
+  rx_size: 2字节
+data_group:
+  数据集1:
+    data:
+    - name: 测试0001
+      data: 00 11
+    - name: 测试1
+      data: 11 11
+    - name: '22222222222'
+      data: '22'
+  数据集3:
+    data:
+    - name: 测试3
+      data: 33 33
+    - name: 测试4
+      data: 44 44
+  test1:
+    data:
+    - name: test1
+      data: 12 34 56
+test_group:
+  新建分组1:
+  - name: 测试1
+    data: 11 11
+  - name: 测试0001
+    data: 00 11
+  - name: 测试0001
+    data: 00 11
+  - name: 测试1
+    data: 11 11
+  - name: '22222222222'
+    data: '22'
+  新建分组2:
+  - name: 测试3
+    data: 33 33
+  - name: 测试4
+    data: 44 44
+  新建分组3:
+  - name: 测试3
+    data: 33 33
+  新建分组4:
+  - name: test1
+    data: 12 34 56

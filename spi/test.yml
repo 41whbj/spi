@@ -1,0 +1,13 @@
+project_name: ''
+spi_config:
+  vcc: ''
+  io: ''
+  speed: ''
+  clk: ''
+  bit: ''
+  rx_size: ''
+data_group:
+  默认组:
+    data: []
+test_group:
+  新建分组1: []
