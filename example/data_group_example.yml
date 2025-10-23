@@ -1,0 +1,28 @@
+"data_group_name": ""
+"spi_config":
+  "vcc": ""
+  "io": ""
+  "speed": ""
+  "clk": ""
+  "bit": ""
+  "s_or_q": ""
+  "rx_size": ""
+"data_group": []
+
+# use example
+
+# "data_group_name": "数据组1"
+# "spi_config":                                             PS: The detail spi_config is showed on 
+#   "vcc": "关闭"                                            the software
+#   "io": "1.8V" 
+#   "speed": "937.5K"
+#   "clk": "LOW/1EDG"
+#   "bit": "MSB"
+#   "s_or_q": "全单线SPI"
+#   "rx_size": "32字节"
+# "data_group":
+#   - "name": "测试数据3"
+#     "data": "AA 11"
+#   - "name": "测试数据4"
+#     "data": "AA 22"
+

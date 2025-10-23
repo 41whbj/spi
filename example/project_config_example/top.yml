@@ -1,0 +1,11 @@
+"project_name": ""
+"data_group_path": []
+"markdown_path": []
+
+# use example
+
+# "project_name": "SPI测试项目"
+# "data_group_path":                                        
+#  - "project_config/group/test1.yml"                         # PS：data_group_path and markdown_path is 
+#  - "project_config/group/test2.yml"                         # not same style
+# "markdown_path": "markdown/示例.md"

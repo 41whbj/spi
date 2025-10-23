@@ -1,0 +1,26 @@
+"mode_group":
+  "新建分组1":
+    - "name": "测试数据1"
+      "data": "AA 11"
+    - "name": "测试数据2"
+      "data": "AA 22"
+    - "name": "测试数据3"
+      "data": "BB 11"
+    - "name": "测试数据4"
+      "data": "BB 22"
+  "新建分组2":
+    - "name": "测试数据2"
+      "data": "AA 22"
+    - "name": "测试数据3"
+      "data": "BB 11"
+    - "name": "测试数据4"
+      "data": "BB 22"
+  "新建分组3":
+    - "name": "测试数据1"
+      "data": "AA 11"
+    - "name": "测试数据2"
+      "data": "AA 22"
+    - "name": "测试数据3"
+      "data": "BB 11"
+    - "name": "测试数据4"
+      "data": "BB 22"

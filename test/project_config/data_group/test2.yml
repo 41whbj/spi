@@ -1,0 +1,14 @@
+"data_group_name": "数据组2"
+"spi_config":
+  "vcc": "关闭"
+  "io": "1.8V"
+  "speed": "937.5K"
+  "clk": "LOW/1EDG"
+  "bit": "MSB"
+  "s_or_q": "全单线SPI"
+  "rx_size": "32字节"
+"data_group":
+  - "name": "测试数据3"
+    "data": "BB 11"
+  - "name": "测试数据4"
+    "data": "BB 22"
