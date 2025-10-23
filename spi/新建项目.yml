@@ -1,0 +1,32 @@
+project_name: '12235'
+spi_config:
+  vcc: 关闭
+  io: 1.8V
+  speed: 937.5K
+  clk: LOW/1EDG
+  bit: MSB
+  rx_size: 2字节
+data_group:
+  默认组:
+    data:
+    - name: '1'
+      data: 01 11 11
+    - name: '111111111'
+      data: '11'
+test_group:
+  新建分组1:
+  - name: '1'
+    data: 01 11 11
+  - name: '111111111'
+    data: '11'
+  新建分组4: []
+  新建分组5:
+  - name: '111111111'
+    data: '11'
+  - name: '111111111'
+    data: '11'
+  - name: '111111111'
+    data: '11'
+  新建分组6: []
+  新建分组7: []
+  新建分组8: []
